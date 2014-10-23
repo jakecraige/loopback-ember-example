@@ -1,0 +1,18 @@
+{
+  "name": "todo",
+  "base": "PersistedModel",
+  "properties": {
+    "text": {
+      "type": "string",
+      "required": true
+    },
+    "completed": {
+      "type": "boolean",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": []
+}
