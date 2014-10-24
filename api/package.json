@@ -11,6 +11,7 @@
     "loopback": "^2.5.0",
     "loopback-boot": "^2.2.0",
     "loopback-connector-mongodb": "^1.4.4",
+    "loopback-connector-rest": "^1.4.0",
     "loopback-datasource-juggler": "^2.7.0",
     "serve-favicon": "^2.0.1"
   },
@@ -18,6 +19,7 @@
     "loopback-explorer": "^1.1.0"
   },
   "devDependencies": {
+    "browserify": "^6.1.0",
     "jshint": "^2.5.6"
   }
 }

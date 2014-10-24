@@ -1,0 +1,7 @@
+#!/usr/bin/env node
+
+var build = require('../client/lbclient/build');
+
+build(process.env.NODE_EVN, function() {
+  console.log(arguments);
+});

@@ -1,0 +1,11 @@
+{
+  "remote": {
+    "name": "remote",
+    "connector": "balh"
+  },
+  "local": {
+    "name": "local",
+    "connector": "memory",
+    "localStorage": "todo-db"
+  }
+}

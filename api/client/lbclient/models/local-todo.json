@@ -1,0 +1,9 @@
+{
+  "name": "local-todo",
+  "base": "todo",
+  "properties": {},
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": []
+}
