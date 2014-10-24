@@ -1,6 +1,6 @@
 export function initialize(/* container, application */) {
   var client = (function() {
-    /*global requrie:true*/
+    /*global require:true*/
     return require('lbclient');
   })();
   window.client = client;

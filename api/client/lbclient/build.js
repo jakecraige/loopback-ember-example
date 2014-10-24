@@ -22,12 +22,12 @@ module.exports = function buildBrowserBundle(env, callback) {
   }
 
   var bundlePath = path.resolve(__dirname, 'bundle', 'browser.bundle.js');
-  var out = fs.createWriteStream(bundlePath);
 
-  b.bundle()
-    .on('error', callback)
-    .pipe(out);
+  b.bundle(function(err, buffer) {
+    if (err) {
+      return callback(err);
+    }
 
-  out.on('error', callback);
-  out.on('close', callback);
+    return fs.writeFile(bundlePath, buffer.toString(), callback);
+  });
 };
