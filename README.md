@@ -10,6 +10,7 @@ You will need the following things properly installed on your computer.
 
 * [Git](http://git-scm.com/)
 * [Node.js](http://nodejs.org/) (with NPM) and [Bower](http://bower.io/)
+* [Loopback](http://loopback.io/)
 
 ## Installation
 
@@ -17,11 +18,18 @@ You will need the following things properly installed on your computer.
 * change into the new directory
 * `npm install`
 * `bower install`
+* `cd api && npm install`
 
 ## Running / Development
 
+* `./api/bin/build-lbclient`
 * `ember server`
+* `cd api && slc run`
+
 * Visit your app at http://localhost:4200.
+* Visit your REST API at http://localhost:3000/explorer.
+
+When you make changes to the loopback server I think you need to restart it.
 
 ### Code Generators
 

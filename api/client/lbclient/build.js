@@ -21,7 +21,7 @@ module.exports = function buildBrowserBundle(env, callback) {
     return callback(err);
   }
 
-  var bundlePath = path.resolve(__dirname, 'browser.bundle.js');
+  var bundlePath = path.resolve(__dirname, 'bundle', 'browser.bundle.js');
   var out = fs.createWriteStream(bundlePath);
 
   b.bundle()
